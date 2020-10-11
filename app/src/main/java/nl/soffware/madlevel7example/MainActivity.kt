@@ -6,12 +6,17 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import com.google.firebase.FirebaseApp
+import com.google.firebase.firestore.FirebaseFirestore
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        FirebaseFirestore.setLoggingEnabled(true)
+        FirebaseApp.initializeApp(this)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

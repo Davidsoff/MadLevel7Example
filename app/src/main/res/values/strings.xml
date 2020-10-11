@@ -14,4 +14,5 @@
     <string name="fragment_home_label">Home</string>
     <string name="fragment_create_label">Create Quiz</string>
     <string name="fragment_quiz_label">Quiz</string>
+    <string name="successfully_created_quiz">Quiz was created successfully</string>
 </resources>
